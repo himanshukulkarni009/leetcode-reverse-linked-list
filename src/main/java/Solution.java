@@ -19,7 +19,7 @@ public class Solution {
         ListNode nextNode = reverseList(head.next);
         System.out.println("nextNode.val " + nextNode.val);
         System.out.println("head.val " + head.val);
-        nextNode.next = head;
+        head.next.next = head;
         head.next = null;
 
         return nextNode;
